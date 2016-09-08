@@ -1,0 +1,48 @@
+﻿<data-ng-form name="ContactForm" class="form-horizontal">
+    <div class="panel">
+        <div class="panel-heading">
+            <h2>  Contact </h2>
+        </div>
+        <div class="panel-body">
+            <div class="form-group-sm" id="FirstNameContainer">
+                <label class="control-label col-sm-4" for="FirstName"> FirstName </label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" placeholder="FirstName" name="FirstName" id="FirstName" data-ng-model="vm.TempContact.FirstName" required />
+                </div>
+            </div>
+            <div class="form-group-sm" id="LastNameContainer">
+                <label class="control-label   col-sm-4" for="LastName"> LastName </label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" placeholder="LastName" name="LastName" id="LastName" data-ng-model="vm.TempContact.LastName" required />
+                </div>
+            </div>
+            <div class="form-group-sm" id="KnicknameContainer">
+                <label class="control-label   col-sm-4" for="Knickname"> Knickname </label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" placeholder="Knickname" name="Knickname" id="Knickname" data-ng-model="vm.TempContact.Knickname" required />
+                </div>
+            </div>
+            <div class="form-group-sm" id="PhoneNumberContainer">
+                <label class="control-label   col-sm-4" for="PhoneNumber"> PhoneNumber </label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" placeholder="PhoneNumber" name="PhoneNumber" id="PhoneNumber" data-ng-model="vm.TempContact.PhoneNumber" required />
+                </div>
+            </div>
+            <div class="form-group-sm" id="DateOfBirthContainer">
+                <label class="control-label   col-sm-4" for="DateOfBirth"> DateOfBirth </label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" placeholder="DateOfBirth" name="DateOfBirth" id="DateOfBirth" data-ng-model="vm.TempContact.DateOfBirth" required />
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <div class="col-sm-8 col-sm-push-4">
+                <button data-ng-if="!vm.Update" type="button" class="btn btn-sm btn-primary  " data-ng-click="vm.save('Save')">Add</button>
+                <button data-ng-if="vm.Update" type="button" class="btn btn-sm btn-primary  " data-ng-click="vm.save('Update')">Update</button>
+                <button type="button" class="btn btn-sm btn-danger eraser-fa" data-ng-click="vm.closeModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+</data-ng-form>
+
+
